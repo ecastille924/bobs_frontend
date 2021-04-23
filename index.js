@@ -1,3 +1,16 @@
-fetch("http://localhost:3000/characters")
+const bobQuotes = document.getElementById("bob-quotes")
+
+fetch("http://localhost:3000/quotes")
     .then(resp => resp.json())
-    .then(data => console.log(data))
+    .then(data => renderQuotes(data))
+
+    function renderQuotes(quotesResp){
+        const quotes = quotesResp.data
+        quotes.forEach(quotes => {
+            const li = document.createElement('li')
+            if(quotes.relationships.character.data.id == 1){
+                li.innerText = quotes.attributes.content
+            }
+            bobQuotes.append(li)
+        })
+    }
