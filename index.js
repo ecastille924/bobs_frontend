@@ -1,4 +1,5 @@
 const bobQuotes = document.getElementById("bob-quotes")
+const lindaQuotes = document.getElementById("linda-quotes")
 
 fetch("http://localhost:3000/quotes")
     .then(resp => resp.json())
@@ -10,7 +11,11 @@ fetch("http://localhost:3000/quotes")
             const li = document.createElement('li')
             if(quotes.relationships.character.data.id == 1){
                 li.innerText = quotes.attributes.content
+                bobQuotes.append(li)
             }
-            bobQuotes.append(li)
+            else if(quotes.relationships.character.data.id == 2){
+                li.innerText = quotes.attributes.content
+                lindaQuotes.append(li)
+            }
         })
     }
