@@ -1,7 +1,10 @@
+const baseURL = 'http://localhost:3000'
+
 const bobQuotes = document.getElementById("bob-quotes")
 const lindaQuotes = document.getElementById("linda-quotes")
 const tinaQuotes = document.getElementById("tina-quotes")
 const geneQuotes = document.getElementById("gene-quotes")
+const louiseQuotes = document.getElementById("louise-quotes")
 
 fetch("http://localhost:3000/quotes")
     .then(resp => resp.json())
@@ -26,6 +29,10 @@ fetch("http://localhost:3000/quotes")
             else if(quotes.relationships.character.data.id == 4){
                 li.innerText = quotes.attributes.content
                 geneQuotes.append(li)
+            }
+            else if(quotes.relationships.character.data.id == 5){
+                li.innerText = quotes.attributes.content
+                louiseQuotes.append(li)
             }
         })
     }
