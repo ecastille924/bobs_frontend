@@ -8,43 +8,58 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 
 <body>
     <h1>Bob's Burgers Quotes and Facts</h1>
 
-    <h2>Bob Belcher</h2>
-    <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/1.jpg" alt="Bob Belcher" >
-    <h3>Quotes</h3>
-    <ul id="bob-quotes">
-    </ul>
+    <div id="character-box">
+        <h2>Bob Belcher</h2>
+        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/1.jpg" alt="Bob Belcher" >
+        <h3>Quotes</h3>
+        <ul id="bob-quotes">
+        </ul>
+    </div>
+   
+    <div id="character-box">    
+        <h2>Linda Belcher</h2>
+        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/2.jpg" alt="Linda Belcher" >
+        <h3>Quotes</h3>
+        <ul id="linda-quotes">
+        </ul>
+    </div>
+    
+    <div id="character-box">
+        <h2>Tina Belcher</h2>
+        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/3.jpg" alt="Tina Belcher" >
+        <h3>Quotes</h3>
+        <ul id="tina-quotes">
+        </ul>
+    </div>
+        
+    <div id="character-box">  
+        <h2>Gene Belcher</h2>
+        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/4.jpg" alt="Gene Belcher" >
+        <h3>Quotes</h3>
+        <ul id="gene-quotes">
+        </ul>
+    </div>  
 
-    <h2>Linda Belcher</h2>
-    <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/2.jpg" alt="Linda Belcher" >
-    <h3>Quotes</h3>
-    <ul id="linda-quotes">
-    </ul>
-
-    <h2>Tina Belcher</h2>
-    <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/3.jpg" alt="Tina Belcher" >
-    <h3>Quotes</h3>
-    <ul id="tina-quotes">
-    </ul>
-
-    <h2>Gene Belcher</h2>
-    <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/4.jpg" alt="Gene Belcher" >
-    <h3>Quotes</h3>
-    <ul id="gene-quotes">
-    </ul>
-
-    <h2>Louise Belcher</h2>
-    <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/5.jpg" alt="Gene Belcher" >
-    <h3>Quotes</h3>
-    <ul id="louise-quotes">
-    </ul>
-
+    <div id="character-box">
+        <h2>Louise Belcher</h2>
+        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BOBB/5.jpg" alt="Gene Belcher" >
+        <h3>Quotes</h3>
+        <ul id="louise-quotes">
+        </ul>
+        <form id = "new-quote-form">
+            <h3>Submit your favorite Louise Quote!</h3>
+            <label for= "quote-input">Quote Text:</label><br>
+            <input type="text" name="louise-quote-input" id="louise-quote-input"><br>
+            <input type="submit" value="Create"><br><br>       
+        </form>
+    </div>
   <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
